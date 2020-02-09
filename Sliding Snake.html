@@ -21,7 +21,9 @@
     <script>
     var $pic = $("#snake-pic");
     $pic.hide();
-    $pic.slideDown();
+    $pic.slideDown(2000, function(){
+        $('<p>').text("this is snake Chrysopelea taprobanica").css('color', 'white').appendTo($('body'));
+    });
     </script>
     </body>
 </html>
