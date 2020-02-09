@@ -35,6 +35,10 @@
     <script>
     $("#trivia-form").on('submit', function(event){
         event.preventDefault();
+        var answer = $('#trivia-answer').val();
+        if(answer === 'resig'){
+            $('#result').text('you got it');
+        }
     });
     </script>
     </body>
