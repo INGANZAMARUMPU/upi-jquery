@@ -13,7 +13,10 @@
     <script>
     var numClicks = 0;
     $("#results").text("You clicked " + numClicks + " times");
-    
+    $('img').on('click', function(){
+        numClicks+=1;
+        $("#results").text("You clicked " + numClicks + " times");
+    })
     </script>
     
 
