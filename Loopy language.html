@@ -24,7 +24,9 @@ var toPigLatin = function(str) {
 
 // Iterate through each paragraph, call the toPigLatin function on it
 var $paragraphs = $("p");
-
+$paragraphs.each(function(i, p){
+    $(p).text(toPigLatin($(p).text()));
+});
         </script>
     </body>
 </html>
