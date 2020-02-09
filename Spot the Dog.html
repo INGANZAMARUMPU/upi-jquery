@@ -22,6 +22,8 @@
     $("#dog-pic").on("click", function(event) {
         var $dot = $("<div></div>");
         $dot.addClass("dot");
+        $dot.css('left', event.pageX+"px");
+        $dot.css('top', event.pageY+"px");
         $dot.appendTo("body");
     });
     </script>
