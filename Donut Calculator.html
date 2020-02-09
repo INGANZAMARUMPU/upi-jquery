@@ -29,8 +29,9 @@
         event.preventDefault();
         
         // TODO: Find inputted age, calculate # of donuts
-        
-        $("#calculator-results").text("Winston ate ?? donuts");
+        var $age = $(this).find($('[name=age]'));
+        var result = calcDonuts(parseInt($age.val()))
+        $("#calculator-results").text("Winston ate "+result+" donuts");
     });
     </script>
     </body>
